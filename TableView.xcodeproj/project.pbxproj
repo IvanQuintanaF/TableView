@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		19DCE9072249AE3B009BD03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCE9062249AE3B009BD03E /* AppDelegate.swift */; };
 		19DCE9092249AE3B009BD03E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCE9082249AE3B009BD03E /* ViewController.swift */; };
-		19DCE90C2249AE3B009BD03E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DCE90A2249AE3B009BD03E /* Main.storyboard */; };
 		19DCE90E2249AE3C009BD03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DCE90D2249AE3C009BD03E /* Assets.xcassets */; };
 		19DCE9112249AE3C009BD03E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DCE90F2249AE3C009BD03E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		19DCE9032249AE3B009BD03E /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DCE9062249AE3B009BD03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DCE9082249AE3B009BD03E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19DCE90B2249AE3B009BD03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19DCE90D2249AE3C009BD03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DCE9102249AE3C009BD03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19DCE9122249AE3C009BD03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +52,37 @@
 		19DCE9052249AE3B009BD03E /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				19DCE9182249AEE4009BD03E /* Base */,
+				19DCE91A2249AEF6009BD03E /* Controller */,
+				19DCE9192249AEF0009BD03E /* Resources */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		19DCE9182249AEE4009BD03E /* Base */ = {
+			isa = PBXGroup;
+			children = (
 				19DCE9062249AE3B009BD03E /* AppDelegate.swift */,
-				19DCE9082249AE3B009BD03E /* ViewController.swift */,
-				19DCE90A2249AE3B009BD03E /* Main.storyboard */,
-				19DCE90D2249AE3C009BD03E /* Assets.xcassets */,
 				19DCE90F2249AE3C009BD03E /* LaunchScreen.storyboard */,
 				19DCE9122249AE3C009BD03E /* Info.plist */,
 			);
-			path = TableView;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		19DCE9192249AEF0009BD03E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19DCE90D2249AE3C009BD03E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		19DCE91A2249AEF6009BD03E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19DCE9082249AE3B009BD03E /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +145,6 @@
 			files = (
 				19DCE9112249AE3C009BD03E /* LaunchScreen.storyboard in Resources */,
 				19DCE90E2249AE3C009BD03E /* Assets.xcassets in Resources */,
-				19DCE90C2249AE3B009BD03E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		19DCE90A2249AE3B009BD03E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19DCE90B2249AE3B009BD03E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		19DCE90F2249AE3C009BD03E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TableView/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TableView/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
